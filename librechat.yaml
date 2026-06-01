@@ -1,0 +1,72 @@
+version: 1.3.11
+cache: true
+
+interface:
+  endpointsMenu: false
+  modelSelect: true
+  parameters: true
+  presets: false
+  prompts: false
+  bookmarks: false
+  webSearch: true
+  fileSearch: true
+  agents: true
+
+fileConfig:
+  endpoints:
+    default:
+      fileLimit: 10
+      fileSizeLimit: 20
+      totalSizeLimit: 50
+      supportedMimeTypes:
+        - "image/.*"
+        - "application/pdf"
+
+endpoints:
+  custom:
+    - name: "Claude"
+      apiKey: "${CLAUDE_API_KEY}"
+      baseURL: "${CLAUDE_API_URL}/v1"
+      models:
+        default:
+          - claude-opus-4-5
+          - claude-sonnet-4-5
+          - claude-haiku-4-5
+        fetch: true
+      titleConvo: true
+      titleModel: "claude-haiku-4-5"
+      modelDisplayLabel: "Claude"
+      maxContextTokens: 180000
+
+    - name: "GPT"
+      apiKey: "${GPT_API_KEY}"
+      baseURL: "${GPT_API_URL}"
+      models:
+        default:
+          - gpt-4o
+          - gpt-4o-mini
+          - gpt-4-turbo
+        fetch: true
+      titleConvo: true
+      titleModel: "gpt-4o-mini"
+      modelDisplayLabel: "GPT"
+      maxContextTokens: 120000
+
+modelSpecs:
+  enforce: true
+  list:
+    - name: "ostoG-Base"
+      label: "ostoG Base"
+      preset:
+        endpoint: "GPT"
+        model: "gpt-5.4"
+    - name: "ostoG-Pro"
+      label: "ostoG Pro"
+      preset:
+        endpoint: "Claude"
+        model: "claude-sonnet-4.6"
+    - name: "ostoG-Ultra"
+      label: "ostoG Ultra"
+      preset:
+        endpoint: "Claude"
+        model: "claude-opus-4.8"

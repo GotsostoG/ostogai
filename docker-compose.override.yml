@@ -1,0 +1,18 @@
+services:
+  api:
+    volumes:
+      - ./librechat.yaml:/app/librechat.yaml
+      - ./OpenAIImageTools.js:/app/api/app/clients/tools/structured/OpenAIImageTools.js
+      - ./EndpointController.js:/app/api/server/controllers/EndpointController.js
+
+  admin-panel:
+    image: ghcr.io/clickhouse/librechat-admin-panel:latest
+    container_name: librechat-admin
+    restart: always
+    ports:
+      - "3001:3000"
+    environment:
+      - SESSION_SECRET=8a1967b224e5a66ade69f28cb2e0e259ab67c5e5
+      - VITE_API_BASE_URL=https://ostogai.ru
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
