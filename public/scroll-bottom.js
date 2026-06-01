@@ -1,6 +1,7 @@
 (function() {
-  let lastScrolled = null;
+  let lastScrollHeight = null;
   let scrollDone = false;
+  let currentPath = location.pathname;
 
   const getScrollContainer = () => {
     let best = null;
@@ -18,36 +19,43 @@
     return best;
   };
 
-  const tryScroll = () => {
+  const scrollToBottom = () => {
     const container = getScrollContainer();
-    if (!container) return false;
-    // Если scrollHeight не изменился за последние 600мс — считаем что загрузка завершена
-    if (lastScrolled === container.scrollHeight) {
-      if (!scrollDone) {
-        container.scrollTop = container.scrollHeight;
-        scrollDone = true;
-      }
-      return true;
+    if (container) {
+      container.scrollTop = container.scrollHeight;
+      scrollDone = true;
     }
-    lastScrolled = container.scrollHeight;
-    return false;
   };
 
+  const tryScroll = () => {
+    if (scrollDone) return;
+    const container = getScrollContainer();
+    if (!container) return;
+    if (lastScrollHeight === container.scrollHeight) {
+      scrollToBottom();
+      return;
+    }
+    lastScrollHeight = container.scrollHeight;
+  };
+
+  const reset = () => {
+    lastScrollHeight = null;
+    scrollDone = false;
+  };
+
+  // Сброс при смене чата (SPA навигация)
   const observer = new MutationObserver(() => {
+    if (location.pathname !== currentPath) {
+      currentPath = location.pathname;
+      reset();
+    }
     if (!scrollDone) tryScroll();
   });
 
   observer.observe(document.body, { childList: true, subtree: true });
 
-  // Страховочный таймер — через 3 секунды скроллим в любом случае
+  // Страховочный таймер
   setTimeout(() => {
-    if (!scrollDone) {
-      const container = getScrollContainer();
-      if (container) {
-        container.scrollTop = container.scrollHeight;
-        scrollDone = true;
-      }
-    }
-    observer.disconnect();
+    if (!scrollDone) scrollToBottom();
   }, 3000);
 })();
