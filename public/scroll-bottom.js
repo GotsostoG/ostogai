@@ -1,7 +1,9 @@
 (function() {
-  let lastScrollHeight = null;
-  let scrollDone = false;
   let currentPath = location.pathname;
+  let scrollDone = false;
+  let lastHeight = 0;
+  let stableCount = 0;
+  let intervalId = null;
 
   const getScrollContainer = () => {
     let best = null;
@@ -23,39 +25,55 @@
     const container = getScrollContainer();
     if (container) {
       container.scrollTop = container.scrollHeight;
-      scrollDone = true;
     }
-  };
-
-  const tryScroll = () => {
-    if (scrollDone) return;
-    const container = getScrollContainer();
-    if (!container) return;
-    if (lastScrollHeight === container.scrollHeight) {
-      scrollToBottom();
-      return;
-    }
-    lastScrollHeight = container.scrollHeight;
   };
 
   const reset = () => {
-    lastScrollHeight = null;
     scrollDone = false;
+    lastHeight = 0;
+    stableCount = 0;
+    if (intervalId) clearInterval(intervalId);
+    start();
+  };
+
+  const start = () => {
+    // Каждые 200мс проверяем высоту контейнера
+    // Если 3 раза подряд не изменилась — считаем загрузку завершённой
+    intervalId = setInterval(() => {
+      const container = getScrollContainer();
+      if (!container) return;
+
+      if (container.scrollHeight === lastHeight) {
+        stableCount++;
+      } else {
+        lastHeight = container.scrollHeight;
+        stableCount = 0;
+      }
+
+      if (stableCount >= 3 && !scrollDone) {
+        scrollToBottom();
+        scrollDone = true;
+        clearInterval(intervalId);
+      }
+    }, 200);
+
+    // Страховка — через 5 секунд скроллим в любом случае
+    setTimeout(() => {
+      if (!scrollDone) {
+        scrollToBottom();
+        scrollDone = true;
+        clearInterval(intervalId);
+      }
+    }, 5000);
   };
 
   // Сброс при смене чата (SPA навигация)
-  const observer = new MutationObserver(() => {
+  new MutationObserver(() => {
     if (location.pathname !== currentPath) {
       currentPath = location.pathname;
       reset();
     }
-    if (!scrollDone) tryScroll();
-  });
+  }).observe(document.body, { childList: true, subtree: true });
 
-  observer.observe(document.body, { childList: true, subtree: true });
-
-  // Страховочный таймер
-  setTimeout(() => {
-    if (!scrollDone) scrollToBottom();
-  }, 3000);
+  start();
 })();
