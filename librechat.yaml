@@ -3,8 +3,8 @@ cache: true
 
 interface:
   endpointsMenu: false
-  modelSelect: true
-  parameters: true
+  modelSelect: false
+  parameters: false
   presets: false
   prompts: false
   bookmarks: false
@@ -28,27 +28,21 @@ endpoints:
       apiKey: "${CLAUDE_API_KEY}"
       baseURL: "${CLAUDE_API_URL}/v1"
       models:
-        default:
-          - claude-opus-4-5
-          - claude-sonnet-4-5
-          - claude-haiku-4-5
-        fetch: true
+        default: ["claude-sonnet-4-6", "claude-opus-4-7"]
+        fetch: false
       titleConvo: true
-      titleModel: "claude-haiku-4-5"
+      titleModel: "claude-sonnet-4-6"
       modelDisplayLabel: "Claude"
-      maxContextTokens: 180000
-
+      maxContextTokens: 200000
     - name: "GPT"
       apiKey: "${GPT_API_KEY}"
       baseURL: "${GPT_API_URL}"
       models:
         default:
-          - gpt-4o
-          - gpt-4o-mini
-          - gpt-4-turbo
-        fetch: true
+          - gpt-5.4
+        fetch: false
       titleConvo: true
-      titleModel: "gpt-4o-mini"
+      titleModel: "gpt-5.4"
       modelDisplayLabel: "GPT"
       maxContextTokens: 120000
 
@@ -58,15 +52,15 @@ modelSpecs:
     - name: "ostoG-Base"
       label: "ostoG Base"
       preset:
-        endpoint: "GPT"
-        model: "gpt-5.4"
+        endpoint: "agents"
+        agent_id: "agent_ByXtqSXvxsmOMcuZYtMop"
     - name: "ostoG-Pro"
       label: "ostoG Pro"
       preset:
-        endpoint: "Claude"
-        model: "claude-sonnet-4.6"
+        endpoint: "agents"
+        agent_id: "agent_3qHOpaO1VJjBcxVHsfs1W"
     - name: "ostoG-Ultra"
       label: "ostoG Ultra"
       preset:
-        endpoint: "Claude"
-        model: "claude-opus-4.8"
+        endpoint: "agents"
+        agent_id: "agent_29J_rNUVyf4x1Iua8SlB5"
