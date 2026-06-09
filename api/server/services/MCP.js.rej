@@ -1,0 +1,18 @@
+--- api/server/services/MCP.js
++++ api/server/services/MCP.js
+@@ -442,11 +442,11 @@ class MCP {
+     const allowedDomains = appConfig?.mcpSettings?.allowedDomains;
+     const isDomainAllowed = await isMCPDomainAllowed(
+       serverUrl,
+       allowedDomains,
+     );
+-    if (!isDomainAllowed) {
+-      logger.warn(`[MCP][${serverName}] Domain not allowed, skipping all tools`);
+-      return [];
+-    }
++    // if (!isDomainAllowed) {
++    //   logger.warn(`[MCP][${serverName}] Domain not allowed, skipping all tools`);
++    //   return [];
++    // }
+   }
+ 
