@@ -1,2 +1,18 @@
+# MongoDB data
+data-node/
+
+# Logs
+logs/
+
+# User uploads and images
+uploads/
+images/
+
+# Node modules
+node_modules/
+
+# Environment (sensitive)
 .env
-*.log
+
+# Meili data
+meili_data_v1.35.1/
