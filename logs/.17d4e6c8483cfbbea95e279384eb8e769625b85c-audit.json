@@ -1,0 +1,60 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/app/logs/.17d4e6c8483cfbbea95e279384eb8e769625b85c-audit.json",
+    "files": [
+        {
+            "date": 1780154176237,
+            "name": "/app/logs/error-2026-05-30.log",
+            "hash": "00599612dad901a54d8cbd8bc6449c2e9b01608d5c121c70189fea5b6bc6bd96"
+        },
+        {
+            "date": 1780208984455,
+            "name": "/app/logs/error-2026-05-31.log",
+            "hash": "881219928afc035596f56772200b3e87370bc4645b2ae54a486267339b98e42d"
+        },
+        {
+            "date": 1780293486388,
+            "name": "/app/logs/error-2026-06-01.log",
+            "hash": "9f12a713f34058e913b074815840a97b7c5a0facee1eeb7df92ec4c6bf768072"
+        },
+        {
+            "date": 1780383520250,
+            "name": "/app/logs/error-2026-06-02.log",
+            "hash": "f279a217fa3f9aa946691eeacc8c0a703d00a271f2219a4d708d38ce66c66b9a"
+        },
+        {
+            "date": 1780478720958,
+            "name": "/app/logs/error-2026-06-03.log",
+            "hash": "bf3db92b8d31a322e3006f9520421e27c893eed55fb41c106615bbf09139a6ff"
+        },
+        {
+            "date": 1780726099413,
+            "name": "/app/logs/error-2026-06-06.log",
+            "hash": "b6257476304b03458eb52e7e3064ae65286598820ccbdca1d7656d50e7a4745b"
+        },
+        {
+            "date": 1780856140299,
+            "name": "/app/logs/error-2026-06-07.log",
+            "hash": "9a6a51129aa1c65dc9702195d3cafb8eae2e28fd48c64b15d3e835c93d97127f"
+        },
+        {
+            "date": 1780916922833,
+            "name": "/app/logs/error-2026-06-08.log",
+            "hash": "d1bfa44c4383bfde129adba85201cad631228855a585895556613e48a16f0eb9"
+        },
+        {
+            "date": 1780988655561,
+            "name": "/app/logs/error-2026-06-09.log",
+            "hash": "1fb6866a79897cbaf6dc5ddbece5c2075b569d26249699025d97bf9b519e161b"
+        },
+        {
+            "date": 1781077908849,
+            "name": "/app/logs/error-2026-06-10.log",
+            "hash": "50e801422b17446830b26a84bb9798a626b3bc0ab83676de5f05141da61f984c"
+        }
+    ],
+    "hashType": "sha256"
+}

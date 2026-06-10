@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/app/logs/.3c8f00094946c5ee5458bfe4c1e9be87e296065b-audit.json",
+    "files": [
+        {
+            "date": 1780154178937,
+            "name": "/app/logs/meiliSync-2026-05-30.log",
+            "hash": "7173232e21bbb9ffb2582a4853242662c45834622be7e569881126296e02ef69"
+        },
+        {
+            "date": 1780213949215,
+            "name": "/app/logs/meiliSync-2026-05-31.log",
+            "hash": "d84b66562135eb0a7d9107dd79e8f48ce7de26360f4371cbb56a485a77ebd9ea"
+        },
+        {
+            "date": 1780300470681,
+            "name": "/app/logs/meiliSync-2026-06-01.log",
+            "hash": "30842024a0787f5b0c30b58051622746978c92484db4233f3e146ca16e0dbb27"
+        },
+        {
+            "date": 1780726101970,
+            "name": "/app/logs/meiliSync-2026-06-06.log",
+            "hash": "0e224b002f9c0945766bd72e678925339901747ff6891ce960c2ebfceb668eea"
+        },
+        {
+            "date": 1780990736327,
+            "name": "/app/logs/meiliSync-2026-06-09.log",
+            "hash": "15524f2cad470baf92589b2ee67b0e8caf361b72b8d671f1a0c28d01018e8734"
+        },
+        {
+            "date": 1781077911664,
+            "name": "/app/logs/meiliSync-2026-06-10.log",
+            "hash": "c34d8e3ade2e9b74efbc600d2205d2d12780b6965f8602de175fa10f7b473010"
+        }
+    ],
+    "hashType": "sha256"
+}
