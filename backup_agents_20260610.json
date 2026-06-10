@@ -1,0 +1,903 @@
+[
+  {
+    "_id": "6a1ddc54d08097e0d9e28044",
+    "id": "agent_ByXtqSXvxsmOMcuZYtMop",
+    "name": "ostoG Base",
+    "description": "",
+    "instructions": "Ты — ostoG Base, быстрый ассистент платформы ostoG для студентов.\n\nИспользуй веб-поиск САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай лаконично и по делу. Отвечай на языке пользователя.",
+    "provider": "GPT",
+    "model": "gpt-5.4",
+    "model_parameters": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "frequency_penalty": 0.1,
+      "presence_penalty": 0.1,
+      "reasoning_summary": "auto",
+      "useResponsesApi": true,
+      "web_search": true
+    },
+    "artifacts": "",
+    "tools": [
+      "image_gen_oai",
+      "file_search",
+      "web_search"
+    ],
+    "tool_kwargs": [],
+    "author": "6a1b009ad9f0a9059e121184",
+    "agent_ids": [],
+    "edges": [],
+    "conversation_starters": [],
+    "versions": [
+      {
+        "name": "ostoG Base",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "model_parameters": {
+          "web_search": true,
+          "reasoning_summary": "auto",
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1
+        },
+        "edges": [],
+        "artifacts": "",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "category": "general",
+        "provider": "GPT",
+        "model": "gpt-5.4",
+        "id": "agent_ByXtqSXvxsmOMcuZYtMop",
+        "tools": [],
+        "createdAt": "2026-06-01T19:24:04.137Z",
+        "updatedAt": "2026-06-01T19:24:04.137Z"
+      },
+      {
+        "name": "ostoG Base",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "GPT",
+        "model": "gpt-5.4",
+        "model_parameters": {
+          "web_search": true,
+          "reasoning_summary": "auto",
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1
+        },
+        "artifacts": "",
+        "tools": [
+          "execute_code",
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:24:04.152Z",
+        "updatedAt": "2026-06-01T19:30:26.350Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Base",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "GPT",
+        "model": "gpt-5.4",
+        "model_parameters": {
+          "reasoning_summary": "auto",
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1
+        },
+        "artifacts": "",
+        "tools": [
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:24:04.152Z",
+        "updatedAt": "2026-06-01T19:47:43.422Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Base",
+        "description": "",
+        "instructions": "Ты — ostoG Base, быстрый ассистент платформы ostoG для студентов.\n\nИспользуй веб-поиск САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай лаконично и по делу. Отвечай на языке пользователя.",
+        "provider": "GPT",
+        "model": "gpt-5.4",
+        "model_parameters": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "reasoning_summary": "auto",
+          "useResponsesApi": true,
+          "web_search": true
+        },
+        "artifacts": "",
+        "tools": [
+          "image_gen_oai",
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:24:04.152Z",
+        "updatedAt": "2026-06-10T08:22:41.792Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      }
+    ],
+    "category": "general",
+    "support_contact": {
+      "name": "",
+      "email": ""
+    },
+    "is_promoted": true,
+    "mcpServerNames": [],
+    "tool_options": {},
+    "createdAt": "2026-06-01T19:24:04.152Z",
+    "updatedAt": "2026-06-10T08:22:41.793Z",
+    "__v": 0,
+    "end_after_tools": false,
+    "hide_sequential_outputs": false
+  },
+  {
+    "_id": "6a1ddcb6d08097e0d9e2809e",
+    "id": "agent_3qHOpaO1VJjBcxVHsfs1W",
+    "name": "ostoG Pro",
+    "description": "",
+    "instructions": "Ты — ostoG Pro, умный универсальный ассистент платформы ostoG для студентов.\n\nИспользуй веб-поиск САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+    "provider": "Claude",
+    "model": "claude-sonnet-4-6",
+    "artifacts": "",
+    "tools": [
+      "image_gen_oai",
+      "file_search",
+      "web_search"
+    ],
+    "tool_kwargs": [],
+    "author": "6a1b009ad9f0a9059e121184",
+    "agent_ids": [],
+    "edges": [],
+    "conversation_starters": [],
+    "versions": [
+      {
+        "name": "ostoG Pro",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "model_parameters": {},
+        "edges": [],
+        "artifacts": "",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "category": "general",
+        "provider": "Claude",
+        "model": "claude-sonnet-4-6",
+        "id": "agent_3qHOpaO1VJjBcxVHsfs1W",
+        "tools": [
+          "execute_code",
+          "file_search",
+          "web_search"
+        ],
+        "createdAt": "2026-06-01T19:25:42.160Z",
+        "updatedAt": "2026-06-01T19:25:42.160Z"
+      },
+      {
+        "name": "ostoG Pro",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-sonnet-4-6",
+        "artifacts": "",
+        "tools": [
+          "execute_code",
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:25:42.173Z",
+        "updatedAt": "2026-06-01T19:27:25.649Z",
+        "model_parameters": {
+          "temperature": 0.7,
+          "top_p": 1,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1
+        },
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Pro",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-sonnet-4.6",
+        "artifacts": "",
+        "tools": [
+          "execute_code",
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:25:42.173Z",
+        "updatedAt": "2026-06-01T19:40:46.297Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "model_parameters": {
+          "temperature": 0.7,
+          "top_p": 1,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "web_search": true
+        },
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Pro",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-sonnet-4.6",
+        "artifacts": "",
+        "tools": [
+          "execute_code",
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:25:42.173Z",
+        "updatedAt": "2026-06-01T19:44:46.884Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "model_parameters": {
+          "temperature": 0.7,
+          "top_p": 1,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "reasoning_summary": "auto"
+        },
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Pro",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-sonnet-4.6",
+        "artifacts": "",
+        "tools": [
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:25:42.173Z",
+        "updatedAt": "2026-06-01T19:50:45.266Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1
+        },
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Pro",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-sonnet-4-6",
+        "artifacts": "",
+        "tools": [
+          "image_gen_oai",
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:25:42.173Z",
+        "updatedAt": "2026-06-06T06:52:10.344Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1
+        },
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Pro",
+        "description": "",
+        "instructions": "Ты — ostoG Base, быстрый ассистент платформы ostoG для студентов.\n\nИспользуй веб-поиск САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай лаконично и по делу. Отвечай на языке пользователя.",
+        "provider": "Claude",
+        "model": "claude-sonnet-4-6",
+        "artifacts": "",
+        "tools": [
+          "image_gen_oai",
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:25:42.173Z",
+        "updatedAt": "2026-06-10T08:21:42.148Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "thinking": {
+            "type": "enabled",
+            "budget_tokens": 8000
+          },
+          "thinkingDisplay": "summarized"
+        },
+        "thinking": {
+          "low": {
+            "type": "enabled",
+            "budget_tokens": 2000
+          },
+          "medium": {
+            "type": "enabled",
+            "budget_tokens": 5000
+          },
+          "high": {
+            "type": "enabled",
+            "budget_tokens": 10000
+          },
+          "extra": {
+            "type": "enabled",
+            "budget_tokens": 15000
+          },
+          "max": {
+            "type": "enabled",
+            "budget_tokens": 20000
+          }
+        },
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Pro",
+        "description": "",
+        "instructions": "Ты — ostoG Pro, умный универсальный ассистент платформы ostoG для студентов.\n\nИспользуй веб-поиск САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-sonnet-4-6",
+        "artifacts": "",
+        "tools": [
+          "image_gen_oai",
+          "file_search",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:25:42.173Z",
+        "updatedAt": "2026-06-10T08:21:53.607Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "thinking": {
+            "type": "enabled",
+            "budget_tokens": 8000
+          },
+          "thinkingDisplay": "summarized"
+        },
+        "thinking": {
+          "low": {
+            "type": "enabled",
+            "budget_tokens": 2000
+          },
+          "medium": {
+            "type": "enabled",
+            "budget_tokens": 5000
+          },
+          "high": {
+            "type": "enabled",
+            "budget_tokens": 10000
+          },
+          "extra": {
+            "type": "enabled",
+            "budget_tokens": 15000
+          },
+          "max": {
+            "type": "enabled",
+            "budget_tokens": 20000
+          }
+        },
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      }
+    ],
+    "category": "general",
+    "support_contact": {
+      "name": "",
+      "email": ""
+    },
+    "is_promoted": true,
+    "mcpServerNames": [],
+    "tool_options": {},
+    "createdAt": "2026-06-01T19:25:42.173Z",
+    "updatedAt": "2026-06-10T08:21:53.618Z",
+    "__v": 0,
+    "end_after_tools": false,
+    "hide_sequential_outputs": false,
+    "model_parameters": {
+      "temperature": 0.7,
+      "frequency_penalty": 0.1,
+      "presence_penalty": 0.1,
+      "thinking": {
+        "type": "enabled",
+        "budget_tokens": 8000
+      },
+      "thinkingDisplay": "summarized"
+    },
+    "thinking": {
+      "low": {
+        "type": "enabled",
+        "budget_tokens": 2000
+      },
+      "medium": {
+        "type": "enabled",
+        "budget_tokens": 5000
+      },
+      "high": {
+        "type": "enabled",
+        "budget_tokens": 10000
+      },
+      "extra": {
+        "type": "enabled",
+        "budget_tokens": 15000
+      },
+      "max": {
+        "type": "enabled",
+        "budget_tokens": 20000
+      }
+    }
+  },
+  {
+    "_id": "6a1dddaed08097e0d9e2816d",
+    "id": "agent_29J_rNUVyf4x1Iua8SlB5",
+    "name": "ostoG Ultra",
+    "description": "",
+    "instructions": "Ты — ostoG Ultra, экспертный ассистент платформы ostoG для самых сложных задач.\n\nИспользуй веб-поиск САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nДумай глубоко и детально. Не упрощай если задача требует глубины. Будь честен в оценках и выводах. Отвечай на языке пользователя.",
+    "provider": "Claude",
+    "model": "claude-opus-4-8",
+    "model_parameters": {
+      "temperature": 0.7,
+      "frequency_penalty": 0.1,
+      "presence_penalty": 0.1,
+      "thinking": {
+        "type": "enabled",
+        "budget_tokens": 15000
+      },
+      "thinkingDisplay": "summarized"
+    },
+    "artifacts": "",
+    "tools": [
+      "image_gen_oai",
+      "web_search"
+    ],
+    "tool_kwargs": [],
+    "author": "6a1b009ad9f0a9059e121184",
+    "agent_ids": [],
+    "edges": [],
+    "conversation_starters": [],
+    "versions": [
+      {
+        "name": "ostoG Ultra",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "reasoning_summary": "auto"
+        },
+        "edges": [],
+        "artifacts": "",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "category": "general",
+        "provider": "Claude",
+        "model": "claude-opus-4-8",
+        "id": "agent_29J_rNUVyf4x1Iua8SlB5",
+        "tools": [],
+        "createdAt": "2026-06-01T19:29:50.960Z",
+        "updatedAt": "2026-06-01T19:29:50.960Z"
+      },
+      {
+        "name": "ostoG Ultra",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-opus-4-8",
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "reasoning_summary": "auto"
+        },
+        "artifacts": "",
+        "tools": [
+          "execute_code",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:29:50.972Z",
+        "updatedAt": "2026-06-01T19:30:43.567Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Ultra",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-opus-4.8",
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "reasoning_summary": "auto",
+          "web_search": true
+        },
+        "artifacts": "",
+        "tools": [
+          "execute_code",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:29:50.972Z",
+        "updatedAt": "2026-06-01T19:40:36.777Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Ultra",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-opus-4.8",
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "reasoning_summary": "auto"
+        },
+        "artifacts": "",
+        "tools": [
+          "image_gen_oai",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:29:50.972Z",
+        "updatedAt": "2026-06-02T09:07:57.762Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Ultra",
+        "description": "",
+        "instructions": "Ты — умный универсальный ассистент ostoG. \n\nИспользуй инструмент веб-поиска САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай на языке пользователя. Будь конкретным и полезным.",
+        "provider": "Claude",
+        "model": "claude-opus-4.8",
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1
+        },
+        "artifacts": "",
+        "tools": [
+          "image_gen_oai",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:29:50.972Z",
+        "updatedAt": "2026-06-02T09:08:04.809Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      },
+      {
+        "name": "ostoG Ultra",
+        "description": "",
+        "instructions": "Ты — ostoG Ultra, экспертный ассистент платформы ostoG для самых сложных задач.\n\nИспользуй веб-поиск САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nДумай глубоко и детально. Не упрощай если задача требует глубины. Будь честен в оценках и выводах. Отвечай на языке пользователя.",
+        "provider": "Claude",
+        "model": "claude-opus-4-8",
+        "model_parameters": {
+          "temperature": 0.7,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 0.1,
+          "thinking": {
+            "type": "enabled",
+            "budget_tokens": 15000
+          },
+          "thinkingDisplay": "summarized"
+        },
+        "artifacts": "",
+        "tools": [
+          "image_gen_oai",
+          "web_search"
+        ],
+        "tool_kwargs": [],
+        "agent_ids": [],
+        "edges": [],
+        "conversation_starters": [],
+        "category": "general",
+        "support_contact": {
+          "name": "",
+          "email": ""
+        },
+        "is_promoted": false,
+        "mcpServerNames": [],
+        "createdAt": "2026-06-01T19:29:50.972Z",
+        "updatedAt": "2026-06-10T08:22:28.773Z",
+        "end_after_tools": false,
+        "hide_sequential_outputs": false,
+        "thinking": {
+          "low": {
+            "type": "enabled",
+            "budget_tokens": 3000
+          },
+          "medium": {
+            "type": "enabled",
+            "budget_tokens": 8000
+          },
+          "high": {
+            "type": "enabled",
+            "budget_tokens": 15000
+          },
+          "extra": {
+            "type": "enabled",
+            "budget_tokens": 25000
+          },
+          "max": {
+            "type": "enabled",
+            "budget_tokens": 50000
+          }
+        },
+        "tool_options": {},
+        "updatedBy": "6a1b009ad9f0a9059e121184"
+      }
+    ],
+    "category": "general",
+    "support_contact": {
+      "name": "",
+      "email": ""
+    },
+    "is_promoted": true,
+    "mcpServerNames": [],
+    "tool_options": {},
+    "createdAt": "2026-06-01T19:29:50.972Z",
+    "updatedAt": "2026-06-10T08:22:28.775Z",
+    "__v": 0,
+    "end_after_tools": false,
+    "hide_sequential_outputs": false,
+    "thinking": {
+      "low": {
+        "type": "enabled",
+        "budget_tokens": 3000
+      },
+      "medium": {
+        "type": "enabled",
+        "budget_tokens": 8000
+      },
+      "high": {
+        "type": "enabled",
+        "budget_tokens": 15000
+      },
+      "extra": {
+        "type": "enabled",
+        "budget_tokens": 25000
+      },
+      "max": {
+        "type": "enabled",
+        "budget_tokens": 50000
+      }
+    }
+  },
+  {
+    "_id": "6a291f80c4ee56802244ba89",
+    "id": "agent_BaseAltHaikuOstoG001",
+    "name": "ostoG Base Alt",
+    "description": "",
+    "instructions": "Ты — ostoG Base Alt, быстрый лёгкий ассистент платформы ostoG для студентов.\n\nИспользуй веб-поиск САМОСТОЯТЕЛЬНО когда:\n- вопрос касается текущих событий, новостей, цен, курсов валют\n- пользователь спрашивает \"сейчас\", \"сегодня\", \"последние\", \"актуальные\"\n- ты не уверен что твои знания актуальны по данной теме\n- нужны конкретные факты о живых людях, компаниях, продуктах\n\nНЕ используй поиск для: математики, написания текстов, общих знаний, кода.\n\nОтвечай максимально кратко и по делу. Отвечай на языке пользователя.",
+    "provider": "Claude",
+    "model": "claude-haiku-4-5-20251001",
+    "tools": [
+      "web_search",
+      "file_search"
+    ],
+    "tool_kwargs": [],
+    "model_parameters": {
+      "temperature": 0.7
+    },
+    "agent_ids": [],
+    "edges": [],
+    "conversation_starters": [],
+    "category": "general",
+    "support_contact": {
+      "name": "",
+      "email": ""
+    },
+    "is_promoted": true,
+    "mcpServerNames": [],
+    "tool_options": {},
+    "end_after_tools": false,
+    "hide_sequential_outputs": false,
+    "createdAt": "2026-06-10T08:25:36.564Z",
+    "updatedAt": "2026-06-10T08:25:36.564Z",
+    "author": "6a1b009ad9f0a9059e121184",
+    "isPublic": true
+  }
+]

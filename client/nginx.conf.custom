@@ -1,15 +1,17 @@
-# Secure default configuration
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
     server_name localhost;
-    
     location / {
         proxy_pass http://api:3080/;
+        proxy_buffering off;
+        proxy_cache off;
+        proxy_set_header Connection '';
+        proxy_http_version 1.1;
+        chunked_transfer_encoding on;
         sub_filter '</body>' '<script>
 window.effortLevel = "high";
 setTimeout(() => {
-  // Look for agent name in common places
   let agentName = "";
   const selectors = [
     "[data-agent]",
@@ -18,7 +20,6 @@ setTimeout(() => {
     "[title*=ostoG]",
     "button[title*=ostoG]"
   ];
-  
   for(let sel of selectors) {
     const el = document.querySelector(sel);
     if(el) {
@@ -26,24 +27,19 @@ setTimeout(() => {
       if(agentName.includes("Pro") || agentName.includes("Ultra")) break;
     }
   }
-  
-  // Also check all text content for ostoG
   if(!agentName) {
     const bodyText = document.body.innerText;
     if(bodyText.includes("ostoG Pro")) agentName = "ostoG Pro";
     if(bodyText.includes("ostoG Ultra")) agentName = "ostoG Ultra";
   }
-  
   if(!agentName.includes("Pro") && !agentName.includes("Ultra")) {
     console.log("Effort selector: Not Pro/Ultra agent");
     return;
   }
-  
   const div = document.createElement("div");
   div.id = "effort-selector";
   div.style.cssText = "display:flex;gap:8px;padding:12px;background:#2a2a2a;border-radius:8px;margin:10px;border:1px solid #444";
   div.innerHTML = "<span style=\"color:#888;font-size:12px;margin-right:10px\">Effort:</span>";
-  
   ["Low","Medium","High","Extra","Max"].forEach(level => {
     const btn = document.createElement("button");
     btn.textContent = level;
@@ -59,15 +55,12 @@ setTimeout(() => {
     };
     div.appendChild(btn);
   });
-  
-  // Insert before message input
   const msgInput = document.querySelector("textarea, [contenteditable], input[type=text]");
   if(msgInput && msgInput.parentElement) {
     msgInput.parentElement.insertBefore(div, msgInput);
   } else {
     document.body.insertBefore(div, document.body.firstChild);
   }
-  
   console.log("Effort selector added for:", agentName);
 }, 2000);
 </script></body>' once;
